@@ -8,5 +8,6 @@ RUN mkdir -p /tmp/download && \
  rm -rf /tmp/download && \
  groupadd -g 999 docker && \
  usermod -aG staff,docker jenkins && \
- newgrp docker
+ newgrp docker && \
+ docker login -u chrishao -p !Lzhyl30272514
 # USER jenkins
