@@ -9,5 +9,6 @@ RUN mkdir -p /tmp/download && \
  groupadd -g 999 docker && \
  usermod -aG staff,docker jenkins && \
  newgrp docker && \
+ systemctl start docker && \
  docker login -u chrishao -p !Lzhyl30272514
 # USER jenkins
